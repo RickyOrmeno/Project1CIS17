@@ -15,6 +15,11 @@ Item::Item(std::string itemName, int boost)
 }
 
 
+int Item::getBoost()
+{
+	return _boost;
+}
+
 Item::~Item()
 {
 }

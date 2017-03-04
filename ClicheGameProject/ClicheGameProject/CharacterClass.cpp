@@ -1,5 +1,5 @@
 #include "CharacterClass.h"
-
+#include <string>
 
 
 CharacterClass::CharacterClass()
@@ -9,13 +9,18 @@ CharacterClass::CharacterClass()
 	_attack = 10;
 }
 
-CharacterClass::CharacterClass(int health, int mana, int attack)
+CharacterClass::CharacterClass(std::string className, int health, int mana, int attack)
 {
+	_className = className;
 	_health = health;
 	_mana = mana;
 	_attack = attack;
 }
 
+int CharacterClass::getHealth()
+{
+	return _health;
+}
 
 CharacterClass::~CharacterClass()
 {

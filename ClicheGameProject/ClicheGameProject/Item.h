@@ -9,6 +9,8 @@ private:
 public:
 	Item();
 	Item(std::string itemName, int boost);
+
+	int Item::getBoost();
 	~Item();
 };
 
